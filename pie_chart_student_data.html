@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title></title>
+
+<meta charset="utf-8">
+
+</head>
+
+<body>
+
+<div id="pie_chart" style="width:550px; height:300px;"></div>
+<script src="Flotr2-master/flotr2.min.js"></script>
+
+<script>
+var data_pie=[ {data:[[0,27.3]], label: "Students who failed english"},
+               {data:[[1,72.7]], label:"Students who passed english"} 
+             
+             ];
+
+Flotr.draw(document.getElementById("pie_chart"),data_pie,{
+title:"Percentage of students who pass English M2",
+pie: {
+      show:true
+
+     },
+
+yaxis: {
+
+       showLabels: false
+      },
+
+xaxis: {
+
+       showLabels: false
+      },
+
+grid: {
+
+      horizontalLines: false,
+      verticalLines: false
+
+}
+
+
+
+});
+
+</script>
+</body>
+
+</html>
